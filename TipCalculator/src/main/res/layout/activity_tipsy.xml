@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".TipsyActivity">
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/enterTotal"
+            android:layout_gravity="top"
+            android:hint="Enter total amount"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="center_horizontal">
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15%"
+                android:layout_margin="10dp"
+                android:id="@+id/btnFifteen"
+                android:singleLine="true"
+                android:clickable="true"
+                android:onClick="calculateFifteenPercent"/>
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="18%"
+                android:id="@+id/btnEighteen"
+                android:clickable="true"
+                android:onClick="calcuateEighteenPercent"/>
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20%"
+                android:layout_margin="10dp"
+                android:id="@+id/btnTwenty"
+                android:clickable="true"
+                android:onClick="calculateTwentyPercent"/>
+    </LinearLayout>
+
+    <TextView android:id="@+id/tipView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:keepScreenOn="true"
+        android:textColor="#33b5e5"
+        android:textStyle="bold"
+        android:textSize="100sp"
+        android:text="$0.00"
+        android:gravity="center"/>
+
+</LinearLayout>
