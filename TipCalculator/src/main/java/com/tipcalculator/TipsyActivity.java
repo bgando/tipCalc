@@ -33,6 +33,27 @@ public class TipsyActivity extends Activity {
 
     }
 
+    public void calculateEighteenPercent(View v){
+        EditText textBoxView = (EditText) findViewById(R.id.enterTotal);
+        String stringTotal = textBoxView.getText().toString();
+        int total = Integer.parseInt(stringTotal);
+
+        double tip = (total * .18);
+
+        showTip(tip);
+
+    }
+    
+    public void calculateTwentyPercent(View v){
+    	EditText textBoxView = (EditText) findViewById(R.id.enterTotal);
+    	String stringTotal = textBoxView.getText().toString();
+    	int total = Integer.parseInt(stringTotal);
+    	
+    	double tip = (total * .20);
+    	
+    	showTip(tip);
+    }
+  
     public void showTip(double num){
         TextView tipView = (TextView) findViewById(R.id.tipView);
         String numberString = String.format("%.2f", num);
