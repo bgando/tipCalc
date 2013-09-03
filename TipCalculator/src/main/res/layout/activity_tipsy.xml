@@ -7,13 +7,13 @@
     tools:context=".TipsyActivity">
 
     <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="numberDecimal"
-            android:ems="10"
-            android:id="@+id/enterTotal"
-            android:layout_gravity="top"
-            android:hint="Enter total amount"/>
+        android:id="@+id/enterTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:ems="10"
+        android:hint="@string/hint_enterTotal"
+        android:inputType="numberDecimal" />
 
     <LinearLayout
             android:layout_width="match_parent"
@@ -22,43 +22,48 @@
             android:gravity="center_horizontal">
 
         <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="15%"
-                android:layout_margin="10dp"
-                android:id="@+id/btnFifteen"
-                android:singleLine="true"
-                android:clickable="true"
-                android:onClick="calculateFifteenPercent"/>
+            android:id="@+id/btnFifteen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:onClick="calculatePercent"
+            android:singleLine="true"
+            android:tag=".15"
+            android:text="@string/btn_fifteenPercent" />
 
         <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:text="18%"
-                android:id="@+id/btnEighteen"
-                android:clickable="true"
-                android:onClick="calcuateEighteenPercent"/>
+            android:id="@+id/btnEighteen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:onClick="calculatePercent"
+            android:tag=".18"
+            android:text="@string/btn_eighteenPercent" />
 
         <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="20%"
-                android:layout_margin="10dp"
-                android:id="@+id/btnTwenty"
-                android:clickable="true"
-                android:onClick="calculateTwentyPercent"/>
+            android:id="@+id/btnTwenty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:onClick="calculatePercent"
+            android:tag=".2"
+            android:text="@string/btn_twentyPercent" />
+
     </LinearLayout>
 
-    <TextView android:id="@+id/tipView"
+    <TextView
+        android:id="@+id/tipView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
+        android:gravity="center"
         android:keepScreenOn="true"
+        android:text="@string/tv_tip"
         android:textColor="#33b5e5"
-        android:textStyle="bold"
         android:textSize="100sp"
-        android:text="$0.00"
-        android:gravity="center"/>
+        android:textStyle="bold" />
 
 </LinearLayout>

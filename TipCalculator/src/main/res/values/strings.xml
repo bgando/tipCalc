@@ -4,5 +4,10 @@
     <string name="app_name">Tip Calculator</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="btn_twentyPercent">20%</string>
+    <string name="btn_eighteenPercent">18%</string>
+    <string name="btn_fifteenPercent">15%</string>
+    <string name="hint_enterTotal">Enter total amount</string>
+    <string name="tv_tip">$0.00</string>
 
 </resources>
